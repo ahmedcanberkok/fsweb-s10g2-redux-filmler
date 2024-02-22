@@ -1,10 +1,11 @@
 import React from 'react';
 
 import MovieListItem from './MovieListItem';
-import MovieListFooter from './MovieListFooter';
+import MovieFooter from './MovieFooter';
+import { useSelector } from 'react-redux';
 
 const MovieList = (props) => {
-  const movies = [];
+  const movies = useSelector((store)=>store.movieReducer.movies);
 
   return (
     <div className="flex-1">
@@ -28,7 +29,7 @@ const MovieList = (props) => {
         </table>
       </div>
 
-      <MovieListFooter totalMovies={movies.length} />
+      <MovieFooter totalMovies={movies.length} />
     </div>
   );
 }
