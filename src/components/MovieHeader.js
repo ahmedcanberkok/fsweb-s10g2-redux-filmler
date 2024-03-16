@@ -19,7 +19,7 @@ const MovieHeader = (props) => {
         <Link to="/movies" className="myButton bg-blue-600 hover:bg-blue-500">Tüm filmler</Link>
         <Link to="/movies/add" className="myButton bg-green-700 hover:bg-green-600">
           <i className="material-icons text-sm">&#xE147;</i>
-          <span>Yeni film ekle</span>
+          <span>Yeni Film</span>
         </Link>
       </div>
     </div>
